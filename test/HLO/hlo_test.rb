@@ -9,7 +9,7 @@ require_solution 'HLO'
 class ClientTest < Minitest::Test
 
   def test_hlo
-    assert_equal "Hello", Hlo.new.hello("Marc"), 'App should say hello to Marc'
+    assert_equal "Hello Marc", Hello.new.hello("Marc"), 'App should say hello to Marc'
   end
 
 end
