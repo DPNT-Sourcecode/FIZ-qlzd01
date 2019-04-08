@@ -12,4 +12,8 @@ class ClientTest < Minitest::Test
     assert_equal "Hello, World!", Hello.new.hello("Marc"), 'App should say Hello, World!'
   end
 
+  def test_hlo_r2
+    assert_equal "Hello, Marc!", Hello.new.hello("Marc"), 'App should say Hello, World!'
+  end
+
 end
