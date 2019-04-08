@@ -10,9 +10,9 @@ class FizzBuzz
             elsif (arr.include?("5") || number % 5 == 0) &&
                 (arr.include?("3") || number % 3 == 0)
               return 'fizz buzz'
-            elsif arr.include?("5") || number % 5 == 0
+            elsif (arr.include?("5") || number % 5 == 0)
               return 'buzz'
-            elsif arr.include?("3") || number % 3 == 0
+            elsif (arr.include?("3") || number % 3 == 0)
               return "fizz"
             else 
               return number
@@ -50,5 +50,6 @@ end
 #   puts "Number out of range"
 # end
 # end
+
 
 
