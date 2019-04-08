@@ -38,7 +38,7 @@ class Conditions
 
     def is_deluxe?(number)
         arr = @number.to_s.split('')
-        if ((arr.all? {|digit| digit == arr[0]}) && number > 10)
+        if ((arr.all? {|digit| digit == arr[0]}) && number > 10) && (number % 2 == 0)
             return true
         else
             return false
@@ -74,8 +74,19 @@ class Conditions
         end
     end
 
+
+    def is_fake_deluxe?(number)
+        arr = @number.to_s.split('')
+        if ((arr.all? {|digit| digit == arr[0]}) && number > 10) && !(number % 2 == 0)
+            return true
+        else
+            return false
+        end
+    end
+
 end
 
 
  
+
 
