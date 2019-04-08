@@ -22,10 +22,12 @@ class ClientTest < Minitest::Test
     assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(555), "App should print 'fizz buzz fake deluxe' when number is divisible by 15, is deluxe and is odd"
     assert_equal "fizz fake deluxe", FizzBuzz.new.fizz_buzz(999), "App should print 'fizz fake deluxe' when number is deluxe and is odd"
     assert_equal "buzz fake deluxe", FizzBuzz.new.fizz_buzz(55), "App should print 'buzz fake deluxe' when number involves 5, but not divisible by 15, is deluxe and is odd"
+    assert_equal "fake deluxe", FizzBuzz.new.fizz_buzz(11), "App should print 'fake deluxe' when number doesn't involve 3 or 5, is deluxe and is odd"
   end
 
 
 end
+
 
 
 

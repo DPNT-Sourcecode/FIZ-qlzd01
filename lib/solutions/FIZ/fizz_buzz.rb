@@ -17,6 +17,8 @@ class FizzBuzz
           return "buzz deluxe"
         elsif @condition.is_fizz_deluxe?(number)
           return "fizz deluxe"
+        elsif @condition.is_fake_deluxe?(number)
+          return "fake deluxe"
         elsif @condition.is_deluxe?(number)
           return "deluxe"
         elsif @condition.is_fizz_buzz?(number)
@@ -33,6 +35,7 @@ class FizzBuzz
     end
   end
 end
+
 
 
 
