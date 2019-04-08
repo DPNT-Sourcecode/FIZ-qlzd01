@@ -7,10 +7,17 @@ class FizzBuzz
         arr = number.to_s.split('')
             if (arr.all? {|digit| digit == arr[0]}) && number > 10
               return 'deluxe'
-
-            else
-              return number
-            end
+            elsif (arr.include?("5") || number % 5 == 0) &&
+                (arr.include?("3") || number % 3 == 0)
+                #           return 'fizz buzz'
+                #         elsif number.to_s.split('').include?("5") || number % 5 == 0
+                #           return 'buzz'
+                #         elsif number.to_s.split('').include?("3") || number % 3 == 0
+                #           return "fizz"
+                #         else 
+                #           return number
+                #         end
+      
 
 
 
@@ -43,3 +50,4 @@ end
 #   puts "Number out of range"
 # end
 # end
+
