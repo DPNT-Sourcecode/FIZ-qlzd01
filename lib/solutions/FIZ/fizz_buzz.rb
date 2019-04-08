@@ -1,12 +1,13 @@
 # noinspection RubyUnusedLocalVariable
-require 'conditions.rb'
+require_relative 'conditions'
 class FizzBuzz
 
   def fizz_buzz(number)
+    @condition = Conditions.new(number)
       # if (1..9999) === number
-        if is_buzz?(number)
+        if @condition.is_buzz?(number)
           return "buzz"
-        elsif is_fizz?(number)
+        elsif @condition.is_fizz?(number)
           return "fizz"
         else 
           return number
@@ -16,3 +17,4 @@ class FizzBuzz
     # end
   end
 end
+
