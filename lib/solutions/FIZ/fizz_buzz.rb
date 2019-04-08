@@ -35,7 +35,3 @@ class FizzBuzz
     end
   end
 end
-
-
-
-
