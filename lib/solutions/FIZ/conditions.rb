@@ -85,7 +85,7 @@ class Conditions
 
     def is_fizz_fake_deluxe?(number)
         arr = @number.to_s.split('')
-        if ((arr.all? {|digit| digit == arr[0]}) && @number > 10) && (@number.odd?)
+        if is_fizz_deluxe?(number) && is_fake_deluxe?(number)
             return true
         else
             return false
