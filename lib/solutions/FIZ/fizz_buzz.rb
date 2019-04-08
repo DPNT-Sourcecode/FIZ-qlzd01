@@ -62,9 +62,3 @@ end
 #   puts "Number out of range"
 # end
 # end
-
-
-
-
-
-
