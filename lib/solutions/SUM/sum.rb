@@ -3,8 +3,9 @@ class Sum
 
   def sum(x, y)
     # raise 'Not implemented'
-    returnx + y
+    return x + y
   end
 
 end
+
 
