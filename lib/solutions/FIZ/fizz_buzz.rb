@@ -2,7 +2,7 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-
+  if number (1..9999) 
     if number  % 15 == 0
       return 'fizz buzz'
     elsif number % 3 == 0
@@ -13,6 +13,10 @@ class FizzBuzz
     else
       return number
     end
+  else
+    puts "number is out of range"
+  end
   end
 
 end
+
