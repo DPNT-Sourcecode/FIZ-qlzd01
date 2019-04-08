@@ -1,6 +1,7 @@
 # noinspection RubyUnusedLocalVariable
 class FizzBuzz
 
+  @answers = []
   def fizz_buzz(number)
       if (1..9999) === number
         arr = number.to_s.split('')
@@ -46,6 +47,7 @@ end
 #   puts "Number out of range"
 # end
 # end
+
 
 
 
