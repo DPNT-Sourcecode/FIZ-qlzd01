@@ -1,21 +1,6 @@
 # noinspection RubyUnusedLocalVariable
 class FizzBuzz
 
- GAME_RULES = {}
-
-
-  #  deluxe => ((arr.all? {|digit| digit == arr[0]}) && number > 10)
-  #  fizz buzz deluxe => ((arr.all? {|digit| digit == arr[0]}) && number > 10) &&
-  #  ((arr.include?("5") || number % 5 == 0) &&
-  #  (arr.include?("3") || number % 3 == 0))
-  #  fizz deluxe => (arr.all? {|digit| digit == arr[0]} && number > 10) && (arr.include?("3") || number % 3 == 0)
-  # #  buzz deluxe =>((arr.all? {|digit| digit == arr[0]}) && number > 10) && (arr.include?("5") || number % 5 == 0)
-  #  fizz => (arr.include?("3") || number % 3 == 0)
-  #  buzz =>(arr.include?("5") || number % 5 == 0)
-  #  fizz buzz => (arr.include?("5") || number % 5 == 0) &&
-  #  (arr.include?("3") || number % 3 == 0)
-
-
   def fizz_buzz(number)
       if (1..9999) === number
         arr = number.to_s.split('')
@@ -42,6 +27,7 @@ class FizzBuzz
     end
   end
 end
+
 
 
 
