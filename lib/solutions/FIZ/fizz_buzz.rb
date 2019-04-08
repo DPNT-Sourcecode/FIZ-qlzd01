@@ -4,7 +4,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
     @condition = Conditions.new(number)
-      # if (1..9999) === number
+      if (1..9999) === number
       if @condition.is_fizz_buzz_fake_deluxe?(number)
         return "fizz buzz fake deluxe"
       elsif @condition.is_fizz_buzz_deluxe?(number)
@@ -28,9 +28,9 @@ class FizzBuzz
         else 
           return number
         end
-    #   else
-    #   puts "Number out of range"
-    # end
+      else
+      puts "Number out of range"
+    end
   end
 end
 
