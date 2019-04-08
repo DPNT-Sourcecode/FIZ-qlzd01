@@ -25,5 +25,10 @@ class ClientTest < Minitest::Test
     assert_equal "fake deluxe", FizzBuzz.new.fizz_buzz(11), "App should print 'fake deluxe' when number doesn't involve 3 or 5, is deluxe and is odd"
   end
 
+  def test_deluxe_new
+    assert_equal "deluxe", FizzBuzz.new.fizz_buzz(25), "App should print 'deluxe' when number is divisible by 3, and contains 3, OR is divisble by 5 and contains a 5"
+    assert_equal "deluxe", FizzBuzz.new.fizz_buzz(39), "App should print 'deluxe' when number is divisible by 3, and contains 3, OR is divisble by 5 and contains a 5"
+  end
+  
 
 end
