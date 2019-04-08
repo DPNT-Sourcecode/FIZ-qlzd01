@@ -64,8 +64,7 @@ class Conditions
 
     def is_fizz_buzz_deluxe?(number)
         @arr = @number.to_s.split('')
-        if ((@arr.all? {|digit| digit == arr[0]}) && number > 10) &&
-          ((@arr.include?("5") || number % 5 == 0) &&
+        if ((@arr.all? {|digit| digit == arr[0]}) && number > 10) && ((@arr.include?("5") || number % 5 == 0) &&
           (@arr.include?("3") || number % 3 == 0))
             return true
         else
@@ -77,6 +76,7 @@ end
 
 
  
+
 
 
 
