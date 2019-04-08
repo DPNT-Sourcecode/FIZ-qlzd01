@@ -74,10 +74,9 @@ class Conditions
         end
     end
 
-
     def is_fake_deluxe?(number)
         arr = @number.to_s.split('')
-        if ((arr.all? {|digit| digit == arr[0]}) && number > 10) && (!check_evenOdd(number))
+        if ((arr.all? {|digit| digit == arr[0]}) && number > 10) && (number.odd?)
             return true
         else
             return false
@@ -96,6 +95,7 @@ end
 
 
  
+
 
 
 
