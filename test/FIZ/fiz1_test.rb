@@ -9,7 +9,7 @@ require_solution 'FIZ'
 class ClientTest < Minitest::Test
 
   def test_fiz
-    assert_equal "fizz", FizzBuzz.new.fizz_buzz(3), 'App should print 'fizz' when passed 3'
+    assert_equal "fizz", FizzBuzz.new.fizz_buzz(3), "App should print 'fizz' when passed 3"
   end
 
 
