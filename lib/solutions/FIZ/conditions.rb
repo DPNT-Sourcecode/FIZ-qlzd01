@@ -41,7 +41,7 @@ class Conditions
 
     def is_deluxe?(number)
         arr = @number.to_s.split('')
-        if is_fizz_new?(number) || is_buzz_new?(number)
+        if is_fizz?(number) || is_buzz?(number)
             return true
         else
             return false
@@ -51,7 +51,7 @@ class Conditions
     def is_fizz_deluxe?(number)
         arr = @number.to_s.split('')
         # if (arr.all? {|digit| digit == arr[0]} && number > 10) && (arr.include?("3") || number % 3 == 0)
-        if is_fizz?(number) && is_deluxe(number)
+        if is_fizz?(number) && is_deluxe?(number)
         return true
         else
             return false
@@ -75,7 +75,7 @@ class Conditions
         arr = @number.to_s.split('')
     #     if ((arr.all? {|digit| digit == arr[0]}) && number > 10) && ((arr.include?("5") || number % 5 == 0) &&
         #   (arr.include?("3") || number % 3 == 0))
-          if is_fizz_buzz(number) && is_deluxe?(number)
+          if is_fizz_buzz?(number) && is_deluxe?(number)
             return true
         else
             return false
@@ -84,7 +84,7 @@ class Conditions
 
     def is_fake_deluxe?(number)
         arr = @number.to_s.split('')
-        if is_deluxe(number) && (@number.odd?)
+        if is_deluxe?(number) && (@number.odd?)
             return true
         else
             return false
