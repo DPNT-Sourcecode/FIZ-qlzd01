@@ -1,9 +1,10 @@
 # noinspection RubyUnusedLocalVariable
 class FizzBuzz
 
+
   def fizz_buzz(number)
       # if (1..9999) === number
-            if (number.to_s.split('').all? {|digit| digit == "number"}) && number > 10
+            if (number.to_s.split('')..all? {|digit| digit == "number"}) && number > 10
               return 'deluxe'
             else
               return number
@@ -13,11 +14,6 @@ class FizzBuzz
     # end
   end
 
-  class Array
-    def same_values?
-      self.uniq.length == 1
-    end
-  end
 
 end
 
@@ -39,6 +35,7 @@ end
 #   puts "Number out of range"
 # end
 # end
+
 
 
 
