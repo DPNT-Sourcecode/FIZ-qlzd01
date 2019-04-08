@@ -17,9 +17,21 @@ class Conditions
         end
     end
 
+    def is_buzz_new?(number)
+        arr = @number.to_s.split('')
+            if (arr.include?("5") && number % 5 == 0)
+            return true
+        else
+            return false
+        end
+
+    end
+
+
     def is_fizz?(number)
         arr = @number.to_s.split('')
-        if (arr.include?("3") || number % 3 == 0)
+        # if (arr.include?("3") || number % 3 == 0)
+            if (arr.include?("3") && number % 3 == 0)
             return true
         else
             return false
@@ -47,7 +59,7 @@ class Conditions
 
     def is_deluxe?(number)
         arr = @number.to_s.split('')
-        if ((arr.all? {|digit| digit == arr[0]}) && number > 10) && (number % 2 == 0)
+        if is_fizz?(number) || is_buzz?(number)
             return true
         else
             return false
@@ -127,3 +139,4 @@ end
 
 
  
+
