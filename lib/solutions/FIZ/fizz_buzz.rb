@@ -3,15 +3,24 @@ class FizzBuzz
 
 
   def fizz_buzz(number)
-      # if (1..9999) === number
-            if (number.to_s.split('').all? {|digit| digit == number.to_s}) && number > 10
+      if (1..9999) === number
+        arr = number.to_s.split('')
+            if (arr.all? {|digit| digit == arr[0]}) && number > 10
               return 'deluxe'
+
+
             else
               return number
             end
-    #   else
-    #   puts "Number out of range"
-    # end
+
+
+
+
+
+
+      else
+      puts "Number out of range"
+    end
   end
 
 
@@ -35,6 +44,7 @@ end
 #   puts "Number out of range"
 # end
 # end
+
 
 
 
