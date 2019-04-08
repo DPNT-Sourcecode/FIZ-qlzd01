@@ -92,6 +92,14 @@ class Conditions
         end
     end
 
+    def is_fizz_buzz_fake_deluxe?(number)
+        arr = @number.to_s.split('')
+        if is_fizz_buzz_deluxe?(number) && is_fake_deluxe?(number)
+            return true
+        else
+            return false
+        end
+    end
 
 
 
@@ -101,3 +109,4 @@ end
 
 
  
+
