@@ -12,6 +12,13 @@ class FizzBuzz
     #   puts "Number out of range"
     # end
   end
+
+  class Array
+    def same_values?
+      self.uniq.length == 1
+    end
+  end
+
 end
 
 
@@ -32,6 +39,7 @@ end
 #   puts "Number out of range"
 # end
 # end
+
 
 
 
