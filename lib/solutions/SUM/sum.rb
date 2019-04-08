@@ -7,5 +7,3 @@ class Sum
   end
 
 end
-
-
