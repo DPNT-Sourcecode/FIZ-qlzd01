@@ -14,12 +14,12 @@ class FizzBuzz
           return "fizz deluxe"
         elsif @condition.is_deluxe?(number)
           return "deluxe"
+        elsif @condition.is_fizz_buzz?(number)
+          return "fizz buzz"
         elsif @condition.is_buzz?(number)
           return "buzz"
         elsif @condition.is_fizz?(number)
           return "fizz"
-        elsif @condition.is_fizz_buzz?(number)
-          return "fizz buzz"
         else 
           return number
         end
@@ -28,6 +28,7 @@ class FizzBuzz
     # end
   end
 end
+
 
 
 
