@@ -76,26 +76,28 @@ class Conditions
 
     def is_fake_deluxe?(number)
         arr = @number.to_s.split('')
-        if ((arr.all? {|digit| digit == arr[0]}) && number > 10) && (number.odd?)
+        if ((arr.all? {|digit| digit == arr[0]}) && @number > 10) && (@number.odd?)
             return true
         else
             return false
         end
     end
 
-    def check_evenOdd(x)
-        if x&1==0
+    def is_fizz_fake_deluxe?(number)
+        arr = @number.to_s.split('')
+        if ((arr.all? {|digit| digit == arr[0]}) && @number > 10) && (@number.odd?)
             return true
         else
             return false
         end
     end
+
+
+
+
+
 
 end
 
 
  
-
-
-
-
