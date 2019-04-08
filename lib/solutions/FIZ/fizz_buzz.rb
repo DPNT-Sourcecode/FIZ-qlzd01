@@ -4,7 +4,7 @@ class FizzBuzz
   @answer = ""
 
   def fizz_buzz(number)
-      # if (1..9999) === number
+      if (1..9999) === number
         arr = number.to_s.split('')
 
 
@@ -25,9 +25,9 @@ class FizzBuzz
               return number
             end
       
-    #   else
-    #   puts "Number out of range"
-    # end
+      else
+      puts "Number out of range"
+    end
   end
 
 
@@ -52,4 +52,5 @@ end
 #   puts "Number out of range"
 # end
 # end
+
 
