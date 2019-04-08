@@ -7,11 +7,8 @@ class FizzBuzz
       # if (1..9999) === number
         arr = number.to_s.split('')
 
-          if (arr.all? {|digit| digit == arr[0]}) && number > 10) && 
-          ((arr.include?("5") || number % 5 == 0) &&
-                (arr.include?("3") || number % 3 == 0))
-                return "fizz buzz deluxe"
-            elsif (arr.all? {|digit| digit == arr[0]}) && number > 10
+
+            if (arr.all? {|digit| digit == arr[0]}) && number > 10
             @answer = "deluxe"
               return 'deluxe'
             elsif (arr.include?("5") || number % 5 == 0) &&
@@ -34,6 +31,7 @@ class FizzBuzz
   end
 
 
+
 end
 
 
@@ -54,3 +52,4 @@ end
 #   puts "Number out of range"
 # end
 # end
+
