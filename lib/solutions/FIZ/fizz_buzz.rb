@@ -37,10 +37,10 @@ class FizzBuzz
             else 
               return number
             end
-      
       else
       puts "Number out of range"
     end
   end
 end
+
 
