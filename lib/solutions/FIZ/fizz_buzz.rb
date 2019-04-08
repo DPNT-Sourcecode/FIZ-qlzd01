@@ -2,22 +2,13 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-      # if  number.to_s.split('').each.include?(3)
-        p number.to_s.split('').each
-        if number.to_s.split('').each.include?(3)
-          puts "Yes"
+        # p number.to_s.split('')
+        if number.to_s.split('').include?("3")
+          return "fizz"
+        else 
+          return number
         end
-      #   return "fizz"
-      # else
-      #   return number
-      # end
+
   end
 
 end
-
-
-
-
-
-
-
