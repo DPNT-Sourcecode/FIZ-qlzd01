@@ -1,4 +1,5 @@
 # noinspection RubyUnusedLocalVariable
+require_relative 'conditions.rb'
 class FizzBuzz
 
   def fizz_buzz(number)
