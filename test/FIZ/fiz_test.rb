@@ -13,10 +13,11 @@ class ClientTest < Minitest::Test
     assert_equal "fizz", FizzBuzz.new.fizz_buzz(34), "App should print 'fizz' when number is divisble by 3 or contains 3"
     assert_equal "buzz", FizzBuzz.new.fizz_buzz(59), "App should print 'buzz' when is divisble by 5 or contains 5"
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(3553), "App should print 'fizz buzz' when number is divisible by 5 or 3 and contains both 3 and 5"
-    assert_equal "fizz buzz deluxe", FizzBuzz.new.fizz_buzz(3553), "App should print 'fizz buzz' when number is divisible by 5 or 3 and contains both 3 and 5"
+    assert_equal "fizz buzz deluxe", FizzBuzz.new.fizz_buzz(555), "App should print 'fizz buzz' when number is divisible by 5 or 3 and contains both 3 and 5"
   end
 
 
 end
+
 
 
