@@ -31,7 +31,7 @@ class Conditions
     def is_fizz?(number)
         arr = @number.to_s.split('')
         # if (arr.include?("3") || number % 3 == 0)
-        if (arr.include?("3") && number % 3 == 0)
+        if (arr.include?("3") || number % 3 == 0)
             return true
         else
             return false
